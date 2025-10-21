@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edukasi & Tutorial - SMK Muhammadiyah Tasikmalaya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SMK Muhammadiyah Tasikmalaya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain4">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain4">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="materi.html">Materi TI</a></li>
+          <li class="nav-item"><a class="nav-link" href="edukasi.html">Edukasi</a></li>
+          <li class="nav-item"><a class="nav-link active" href="fasilitas.html">Fasilitas</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="guru.html">Guru</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1>Edukasi & Modul Praktik</h1>
+    <p class="text-muted">Modul, tutorial langkah demi langkah, tugas, dan rubrik penilaian.</p>
+
+    <section class="mb-4">
+      <h3>Modul 1: Membuat Halaman Web Sederhana</h3>
+      <ol>
+        <li><strong>Tujuan:</strong> Siswa dapat membuat halaman HTML responsif menggunakan Bootstrap.</li>
+        <li><strong>Alat:</strong> VSCode, browser, koneksi internet (untuk CDN) atau file Bootstrap lokal.</li>
+        <li><strong>Langkah:</strong>
+          <ol>
+            <li>Buka VSCode → buat file baru `index.html`</li>
+            <li>Tambahkan boilerplate HTML & link Bootstrap CDN (lihat contoh pada beranda)</li>
+            <li>Buat struktur header, section, dan footer menggunakan grid Bootstrap</li>
+            <li>Uji pada browser, perbaiki responsivitas</li>
+          </ol>
+        </li>
+        <li><strong>Tugas:</strong> Buat halaman profil diri minimal 1 halaman, kirim file zip atau link GitHub.</li>
+        <li><strong>Rubrik Penilaian:</strong> Struktur HTML (30%), Responsivitas (30%), Styling dasar (20%), Kerapihan & komentar (20%).</li>
+      </ol>
+    </section>
+
+    <section class="mb-4">
+      <h3>Modul 2: CRUD dengan PHP & MySQL</h3>
+      <ol>
+        <li><strong>Tujuan:</strong> Membuat aplikasi sederhana untuk menyimpan data pendaftar.</li>
+        <li><strong>Langkah singkat:</strong>
+          <ol>
+            <li>Siapkan XAMPP / LAMP / MAMP.</li>
+            <li>Tambahkan database `spmb` dan tabel `pendaftar` (contoh SQL ada di README).</li>
+            <li>Buat `koneksi.php` untuk koneksi MySQLi/PDO.</li>
+            <li>Buat file: index.php (tampilkan data), tambah.php (form tambah), edit.php, hapus.php.</li>
+            <li>Gunakan prepared statements untuk menghindari SQL Injection.</li>
+          </ol>
+        </li>
+        <li><strong>Tugas:</strong> Implementasikan CRUD minimal dan presentasikan hasilnya.</li>
+      </ol>
+    </section>
+
+    <section class="mb-4">
+      <h3>Modul 3: Git & GitHub untuk Siswa</h3>
+      <ol>
+        <li>Inisialisasi repo: <code>git init</code></li>
+        <li>Set up remote & push: <code>git remote add origin &lt;URL&gt;</code> lalu <code>git push -u origin main</code></li>
+        <li>Praktik membuat branch, merge, dan pull request (jika menggunakan GitHub).</li>
+      </ol>
+    </section>
+
+    <section class="mb-4">
+      <h3>Materi Tambahan: Keamanan Dasar Aplikasi</h3>
+      <ul>
+        <li>Validasi input pada client & server</li>
+        <li>Gunakan HTTPS jika deploy</li>
+        <li>Prepared statements / ORM untuk akses DB</li>
+      </ul>
+    </section>
+
+    <section class="mt-5">
+      <h3>Template Tugas Proyek Akhir (Contoh)</h3>
+      <p>Buat sebuah mini-aplikasi pendaftaran siswa baru yang memiliki fitur:</p>
+      <ul>
+        <li>Form pendaftaran (simpan ke DB)</li>
+        <li>Halaman admin untuk melihat data pendaftar (login sederhana)</li>
+        <li>Statistik sederhana: jumlah perjurusan</li>
+      </ul>
+      <p>Lengkapi dengan dokumentasi: bagaimana menjalankan proyek, struktur DB, dan screenshot.</p>
+    </section>
+  </main>
+
+  <footer class="bg-light py-3 text-center">
+    <div class="container">
+      <a href="index.html">Selesai</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
